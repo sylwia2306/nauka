@@ -90,3 +90,31 @@ console.log('1' != 1); // false - nie są różne
 
 console.log('1' !== 1); // true - są różne
 console.log(1 !== 1); // false - nie są różne
+
+$(document).ready(function () {
+	let h2Text = 'tresc';
+
+	console.log('NAGLOWEK H2');
+	console.log($('h2'));
+
+	//
+
+	$('.square-hide').click(function () {
+		$('h2').hide();
+	});
+
+	$('.square-show').click(function () {
+		$('h2').show();
+		//$('h2').html(h2Text);
+
+	
+		for(let i = 0; i< 100; i++) {
+			let myh3 = $('<h3>Nowy element H3</h3>')
+			$('#point').append(myh3)
+		}
+
+
+	});
+
+
+});
