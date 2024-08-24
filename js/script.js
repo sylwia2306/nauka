@@ -52,3 +52,41 @@ console.log(`Pole imie z pizzy: ${pizza.courier.name}`);
 console.log(`Pole nazwisko z pizzy: ${pizza.courier.surname}`);
 console.log(`Pole rozmiar: ${pizza.size}`);
 
+let car = {
+	brand: 'Audi',
+	year: '2012',
+	color: 'pink',
+	motor: {
+		capacity: '2l',
+		isDiesel: true,
+		isBensine: false,
+	},
+};
+console.log(car);
+
+// OPERATORY
+
+// plus   +
+// minus  -
+// mnożenie *
+// dzielenie /
+// operator przypisania  =
+// operator modulo %     np.  ( 21%10 = 1 )
+// operator inkrementacji ++    (+1)
+// operator dekrementacji --   (-1)
+
+// PORÓWNYWANIE ZMIENNYCH  (zwraca zawsze true lub false  - wartość typu boolean )
+//  większe od  >
+//  mniejsze od  <
+//  większe lub równe  >=
+//  mniejsze lub równe  <=
+//  równe-porównanie zmiennych (bez typu)  ==    np  '1' == 1    ----> true
+//  równee-porównanie zmiennych  (z typem)  ===    np  '1' === 1    ----> false
+//  różne-porównanie zmiennych (bez typu)  !=    np  '1' != 1    ----> false (Czy elementy są takie same nie uwzględniając typu)
+//  różne-porównanie zmiennych (z typem)  !==    np  '1' !== 1    ----> true (Czy elementy są takie same uwzględniając typ)
+
+console.log(1 != 1); // false - nie są różne
+console.log('1' != 1); // false - nie są różne
+
+console.log('1' !== 1); // true - są różne
+console.log(1 !== 1); // false - nie są różne
