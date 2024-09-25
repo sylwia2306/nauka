@@ -5,7 +5,9 @@
 const red = 'czerwony';
 const green = 'zielony';
 
-console.log('Zmienna red: ' + red);
+console.log(red);
+console.log('A To moje zdanie');
+
 console.log(`Zmienna green: ${green}`);
 
 // typy proste
@@ -14,7 +16,6 @@ let y = 34;
 let name = 'Karol';
 let isRed = true;
 let z;
-
 //objekt zawiera kilka typów prostych
 
 // sposób 1 tworzenia obiektu
@@ -75,6 +76,10 @@ console.log(car);
 // operator inkrementacji ++    (+1)
 // operator dekrementacji --   (-1)
 
+let a = 10;
+let by = ++a; // by = 11
+let bx = a++; // bx = 10
+
 // PORÓWNYWANIE ZMIENNYCH  (zwraca zawsze true lub false  - wartość typu boolean )
 //  większe od  >
 //  mniejsze od  <
@@ -90,6 +95,49 @@ console.log('1' != 1); // false - nie są różne
 
 console.log('1' !== 1); // true - są różne
 console.log(1 !== 1); // false - nie są różne
+
+// INSTRUKCJE WARUNKOWE
+
+// 1. IF  ( jezeli  cos jest spełnione (warunek)   to zrób coś )
+
+if (1 == 1) {
+	// moj kod
+	console.log('Jeden równa się jeden');
+} else if (2 == 2) {
+	console.log('Dwa równa się dwa');
+} else {
+	// a co jesli nie jest równe
+	console.log('Jeden NIE równa się jeden');
+}
+
+// 2. SWITCH
+
+let color = 'blue';
+
+switch (color) {
+	case 'red': {
+		console.log('CZERWONY');
+		break; // wyjdz ze switcha - przerwij
+	}
+	case 'blue': {
+		console.log('NIEBIESKI');
+		break; // wyjdz ze switcha - przerwij
+	}
+	case 'green': {
+		console.log('ZIELONY');
+		break; // wyjdz ze switcha - przerwij
+	}
+	case 'black': {
+		console.log('CZARNY');
+		break; // wyjdz ze switcha - przerwij
+	}
+
+	default: {
+		console.log('BRAK KOLORU');
+	}
+}
+
+// jQUERY
 
 $(document).ready(function () {
 	let h2Text = 'tresc';
@@ -107,14 +155,9 @@ $(document).ready(function () {
 		$('h2').show();
 		//$('h2').html(h2Text);
 
-	
-		for(let i = 0; i< 100; i++) {
-			let myh3 = $('<h3>Nowy element H3</h3>')
-			$('#point').append(myh3)
+		for (let i = 0; i < 100; i++) {
+			let myh3 = $('<h3>Nowy element H3</h3>');
+			$('#point').append(myh3);
 		}
-
-
 	});
-
-
 });
