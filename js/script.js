@@ -137,6 +137,74 @@ switch (color) {
 	}
 }
 
+// 3. OPERATOR WARUNKOWY - OPERATOR TRÓJ ARGUMENOWTY
+let tx = 10;
+
+tx < 20
+	? console.log('tx jest mniejsze od 20')
+	: console.log('tx jest większe od 20');
+
+// stwórz:
+// * zmienną o nazwie 'isEven' która mówi czy dana liczba jest parzysta
+// * zmienną o nazwie 'number' i przypisz do niej dowolną liczbę np. 10
+
+// * przypisz do zmiennej 'isEven' za pomocą operatora warunkowego wartość true lub false.
+//     Operator warunkowy ma sprawdzić czy liczba pod zmienną o nazwie 'number' jest parzysta  czy nieparysta
+
+// wypisz komunikat na konsoli o nazwie "Zmienna 'number' jest parzysta lub nieparzysta" w zaleznosic od wyniku
+
+let isEven;
+let number = 11;
+
+isEven = number % 2 == 0;
+isEven
+	? console.log(`Zmienna ${number} jest parzysta`)
+	: console.log(`Zmienna ${number} jest nieparzysta`);
+
+// PĘTLE
+
+// FOR (zmienna mozna ale nie trzeba definiowac w nawiasach okraglych)
+for (let z = 0; z > 10; z = z - 1) {
+	console.log(`PETLA ${z}`);
+}
+
+// WHILE (zmienna trzeba definiowac poza nawiasami okraglymi, nie mozna w)
+let f = 2;
+
+while (f < -1) {
+	console.log(`WHILE ${f}`);
+	f = f + 1;
+}
+
+let h = 2;
+
+// DO-WHILE (zmienna trzeba definiowac poza nawiasami okraglymi, nie mozna w)
+// Pętla DO-WHILE różni się od pętli WHILE tym, że pętla WHILE zawsze na początku sprawdzi warunek i dopiero później wykona kod w pętli, natomiast pętla DO-WHILE zawsze przynajmniej raz wykona to co jest w pętli i na końcu sprawdzi warunek
+do {
+	console.log(`DO-WHILE ${h}`);
+	h = h + 1;
+} while (h < -1);
+
+// For of lub For each
+// Przydaje się gdy chcemy wyświetlić wszytkie elementy tablicy bez użycia indeksu
+
+const numbers = [65, 768, 45, 67];
+
+// numbers[0] --> 65
+// numbers[1] --> 768
+// numbers[2] --> 45
+
+for (let i = 0; i < numbers.length; i++) {
+	// tu mamy dostep do indeksu - i  z tablicy
+	console.log(`Petla for: ${numbers[i]}`);
+}
+
+// Alternatywa jesli nie potrzebujemy tego indeksu to petla For each - for of
+
+for (let singleNumber of numbers) {
+	console.log(`Petla FOR OF: ${singleNumber}`);
+}
+
 // jQUERY
 
 $(document).ready(function () {
