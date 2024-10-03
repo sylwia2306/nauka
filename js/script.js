@@ -205,6 +205,39 @@ for (let singleNumber of numbers) {
 	console.log(`Petla FOR OF: ${singleNumber}`);
 }
 
+// FUNKCJE
+
+console.log('NAUKA - FUNKCJE');
+
+function wypiszTekst(text) {
+	console.log(`Wypisany tekst: ${text}`);
+}
+
+function love() {
+	console.log(`Kocham Cię`);
+}
+love();
+
+let text1 = 'Lol';
+let text2 = 'xd';
+let text3 = 123;
+
+wypiszTekst(text1);
+wypiszTekst(text2);
+wypiszTekst(text3);
+
+let wynik = add(10, 40);
+
+function add(x, y) {
+	return x + y;
+}
+
+
+
+
+
+wypiszTekst(wynik);
+
 // jQUERY
 
 $(document).ready(function () {
